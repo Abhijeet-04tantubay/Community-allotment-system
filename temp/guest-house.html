@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Guest House Booking</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Guest House Booking</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="community-hall.html">Community Hall</a></li>
+          <li><a href="complaint-box.html">Complaint Box</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="booking-form">
+        <h2>Book Your Stay</h2>
+        <form action="/submit-guest-house" method="POST">
+          <label for="name">Full Name:</label>
+          <input type="text" id="name" name="name" required />
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="checkin">Check-In Date:</label>
+          <input type="date" id="checkin" name="checkin" required />
+
+          <label for="checkout">Check-Out Date:</label>
+          <input type="date" id="checkout" name="checkout" required />
+
+          <label for="room">Room Type:</label>
+          <select id="room" name="room">
+            <option value="single">Single</option>
+            <option value="double">Double</option>
+            <option value="deluxe">Deluxe</option>
+          </select>
+
+          <label for="idproof">Upload ID Proof:</label>
+          <input type="file" id="idproof" name="idproof" required />
+
+          <button type="submit">Confirm Booking</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Community Services. All rights reserved.</p>
+    </footer>
+  </body>
+</html>

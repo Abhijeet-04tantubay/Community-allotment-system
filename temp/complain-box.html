@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Complaint Box</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Submit a Complaint</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="guest-house.html">Guest House</a></li>
+          <li><a href="community-hall.html">Community Hall</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="complaint-form">
+        <h2>Complaint Submission Form</h2>
+        <form
+          action="/submit-complaint"
+          method="POST"
+          enctype="multipart/form-data"
+        >
+          <label for="category">Complaint Category:</label>
+          <select id="category" name="category">
+            <option value="electricity">Electricity</option>
+            <option value="water">Water</option>
+            <option value="cleanliness">Cleanliness</option>
+            <option value="safety">Safety</option>
+            <option value="other">Other</option>
+          </select>
+
+          <label for="name">Name (optional):</label>
+          <input type="text" id="name" name="name" />
+
+          <label for="contact">Contact Info (optional):</label>
+          <input type="text" id="contact" name="contact" />
+
+          <label for="description">Complaint Description:</label>
+          <textarea
+            id="description"
+            name="description"
+            rows="5"
+            required
+          ></textarea>
+
+          <label for="evidence">Upload Image/Video (optional):</label>
+          <input type="file" id="evidence" name="evidence" />
+
+          <button type="submit">Submit Complaint</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Community Services. All rights reserved.</p>
+    </footer>
+  </body>
+</html>

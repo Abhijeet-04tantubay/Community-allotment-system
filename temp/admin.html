@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Panel</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Admin Panel</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="admin-dashboard">
+        <h2>Dashboard</h2>
+        <div class="stats">
+          <div class="card">
+            Total Guest Bookings: <span id="guest-count">--</span>
+          </div>
+          <div class="card">
+            Total Hall Reservations: <span id="hall-count">--</span>
+          </div>
+          <div class="card">
+            Total Complaints: <span id="complaint-count">--</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="admin-tables">
+        <h3>Recent Guest House Bookings</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Room Type</th>
+              <th>Check-in</th>
+              <th>Check-out</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody id="guest-bookings">
+            <!-- Booking data dynamically inserted here -->
+          </tbody>
+        </table>
+
+        <h3>Recent Hall Reservations</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Event</th>
+              <th>Date</th>
+              <th>Time</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody id="hall-reservations">
+            <!-- Reservation data dynamically inserted here -->
+          </tbody>
+        </table>
+
+        <h3>Submitted Complaints</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Category</th>
+              <th>Description</th>
+              <th>Submitted By</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody id="complaint-list">
+            <!-- Complaints dynamically inserted here -->
+          </tbody>
+        </table>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Community Services. Admin Access Only.</p>
+    </footer>
+  </body>
+</html>
